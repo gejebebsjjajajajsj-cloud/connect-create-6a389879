@@ -57,6 +57,10 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        whatsapp: {
+          DEFAULT: "hsl(var(--whatsapp))",
+          foreground: "hsl(var(--whatsapp-foreground))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,10 +84,16 @@ export default {
             height: "0",
           },
         },
+        "whatsapp-pulse": {
+          "0%": { boxShadow: "0 0 0 0 hsl(var(--whatsapp) / 0.4)" },
+          "70%": { boxShadow: "0 0 0 12px hsl(var(--whatsapp) / 0)" },
+          "100%": { boxShadow: "0 0 0 0 hsl(var(--whatsapp) / 0)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "whatsapp-pulse": "whatsapp-pulse 1.8s ease-out infinite",
       },
     },
   },
