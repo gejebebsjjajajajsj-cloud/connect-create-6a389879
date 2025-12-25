@@ -1,9 +1,5 @@
 import { Button } from "@/components/ui/button";
-
-const WHATSAPP_LINK =
-  "https://wa.me/5599999999999?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20seus%20conte%C3%BAdos.";
-
-// Substitua o número acima (5599999999999) pelo seu número real do WhatsApp no formato internacional.
+import { WHATSAPP_LINK } from "@/config/whatsapp";
 
 const Offers = () => {
   return (
@@ -34,7 +30,12 @@ const Offers = () => {
             </ul>
             <div className="mt-5">
               <Button asChild size="lg" variant="whatsapp">
-                <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" aria-label="Chamar no WhatsApp para chamada de vídeo">
+                <a
+                  href={WHATSAPP_LINK}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Chamar no WhatsApp para chamada de vídeo"
+                >
                   Chamar no WhatsApp
                 </a>
               </Button>
@@ -54,7 +55,12 @@ const Offers = () => {
             </ul>
             <div className="mt-5">
               <Button asChild size="lg" variant="whatsapp">
-                <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" aria-label="Chamar no WhatsApp para packs de fotos e vídeos">
+                <a
+                  href={WHATSAPP_LINK}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Chamar no WhatsApp para packs de fotos e vídeos"
+                >
                   Chamar no WhatsApp
                 </a>
               </Button>

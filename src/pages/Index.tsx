@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
+import { WHATSAPP_LINK } from "@/config/whatsapp";
 import { Button } from "@/components/ui/button";
-
+ 
 const Index = () => {
   return (
     <main className="flex min-h-screen items-center justify-center bg-background">
@@ -14,21 +14,20 @@ const Index = () => {
             Fale comigo direto no <span className="text-primary">WhatsApp</span>
           </h1>
           <p className="text-sm text-muted-foreground sm:text-base">
-            Clique no botão abaixo para ver minhas opções de chamada de vídeo e packs de fotos e vídeos, tudo pelo
-            WhatsApp.
+            Clique no botão abaixo para falar direto comigo pelo WhatsApp.
           </p>
         </header>
-
+ 
         <div className="mt-8 flex justify-center">
           <Button asChild size="lg" variant="whatsapp">
-            <Link to="/ofertas" aria-label="Ver opções e chamar no WhatsApp">
+            <a href={WHATSAPP_LINK} target="_blank" rel="noreferrer" aria-label="Chamar no WhatsApp">
               Entrar pelo WhatsApp
-            </Link>
+            </a>
           </Button>
         </div>
       </section>
     </main>
   );
 };
-
+ 
 export default Index;
