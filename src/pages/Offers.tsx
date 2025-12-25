@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { WHATSAPP_LINK } from "@/config/whatsapp";
+import { WHATSAPP_PACKS, WHATSAPP_VIDEO_CALL } from "@/config/whatsapp";
 
 const Offers = () => {
   return (
@@ -31,7 +31,7 @@ const Offers = () => {
             <div className="mt-5">
               <Button asChild size="lg" variant="whatsapp">
                 <a
-                  href={WHATSAPP_LINK}
+                  href={WHATSAPP_VIDEO_CALL}
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Chamar no WhatsApp para chamada de vídeo"
@@ -56,7 +56,7 @@ const Offers = () => {
             <div className="mt-5">
               <Button asChild size="lg" variant="whatsapp">
                 <a
-                  href={WHATSAPP_LINK}
+                  href={WHATSAPP_PACKS}
                   target="_blank"
                   rel="noreferrer"
                   aria-label="Chamar no WhatsApp para packs de fotos e vídeos"
