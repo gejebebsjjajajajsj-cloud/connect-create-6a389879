@@ -1,4 +1,7 @@
-export const WHATSAPP_LINK =
-  "https://wa.me/5599999999999?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20seus%20conte%C3%BAdos.";
+const BASE_NUMBER = "5599999999999"; // Substitua pelo seu número real no formato internacional
 
-// Substitua o número acima (5599999999999) pelo seu número real do WhatsApp no formato internacional.
+export const WHATSAPP_VIDEO_CALL =
+  `https://wa.me/${BASE_NUMBER}?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20fazer%20uma%20chamada%20de%20v%C3%ADdeo.`;
+
+export const WHATSAPP_PACKS =
+  `https://wa.me/${BASE_NUMBER}?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20comprar%20seus%20packs%20de%20fotos%20e%20v%C3%ADdeos.`;
