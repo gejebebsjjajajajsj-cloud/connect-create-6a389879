@@ -20,9 +20,10 @@ const Offers = () => {
           <article className="group relative flex h-full flex-col justify-between overflow-hidden rounded-2xl border border-border bg-card/90 p-4 shadow-md shadow-primary/10 transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/20">
             <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,_hsl(var(--accent))_0,_hsl(var(--background))_70%)] opacity-60 transition-opacity duration-300 group-hover:opacity-80" />
             <div>
-              <h2 className="text-lg font-semibold tracking-tight sm:text-xl">Chamada de vídeo</h2>
+              <h2 className="text-lg font-semibold tracking-tight sm:text-xl">Chamada de vídeo (somente compra)</h2>
               <p className="mt-1 text-xs text-muted-foreground sm:text-sm">
-                Chamadas de vídeo particulares, com horário combinado e atenção total pra você.
+                Botão exclusivo para quem quer <strong className="font-semibold text-foreground">comprar uma chamada de vídeo</strong>
+                direto comigo pelo WhatsApp.
               </p>
               <ul className="mt-2 space-y-0.5 text-xs text-muted-foreground sm:text-sm">
                 <li>• Tempo de chamada flexível</li>
